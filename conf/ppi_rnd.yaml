@@ -1,0 +1,24 @@
+# Network
+dim: 512
+aggr: 'concat'
+loss: 'sigmoid'
+arch: '1-0-1-0'
+act: 'relu'
+bias: 'norm'
+
+# Training params
+lr: 0.01
+dropout: 0.0
+n_epochs: 1000
+
+# Sampling params
+sample_coverage: 50
+sampler: 'uniform_rnd'
+sg_size: 6000
+
+# Other
+adj_norm: 'sym'
+
+# Epoch
+eval_train_every: 15
+eval_val_every: 1

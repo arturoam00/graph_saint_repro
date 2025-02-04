@@ -1,0 +1,24 @@
+# Network params
+dim: 128
+aggr: 'concat'
+loss: 'softmax'
+arch: '1-0-1-0'
+act: 'relu'
+bias: 'norm'
+
+# Training params
+lr: 0.01
+dropout: 0.1
+n_epochs: 40
+
+# Sampling params
+sample_coverage: 50
+sampler: 'node'
+sg_size: 8000
+
+# Other
+adj_norm: 'sym' # Similar results with 'rw'
+
+# Evaluation
+eval_train_every: 15
+eval_val_every: 1

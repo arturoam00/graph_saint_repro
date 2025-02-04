@@ -1,3 +1,10 @@
+.envrc
+.vscode
+data
+docs
+*.code-workspace
+torch_models
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

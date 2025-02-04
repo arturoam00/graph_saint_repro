@@ -1,0 +1,24 @@
+# Network params
+dim: 256
+aggr: 'concat'
+loss: 'softmax'
+arch: '1-1-0'
+act: 'relu'
+bias: 'norm'
+
+# Training params
+lr: 0.01
+dropout: 0.2
+n_epochs: 15
+
+# Sampling params
+sample_coverage: 25
+sampler: 'edge'
+size_sg_edge: 6000
+
+# Other
+adj_norm: 'rw'
+
+# Evaluation
+eval_train_every: 15
+eval_val_every: 1
