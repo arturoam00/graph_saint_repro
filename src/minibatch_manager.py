@@ -159,7 +159,6 @@ class MiniBatchManager:
         assert np.all(self.norm_factors["loss_tr"][self.nodes_train] >= val_min)
 
         # Update the loss norm factor according to the count
-        # TODO: UNDERSTAND THIS LINE
         self.norm_factors["loss_tr"][self.nodes_train] = (
             self.n_subgraphs
             / self.norm_factors["loss_tr"][self.nodes_train]
